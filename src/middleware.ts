@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 
 export function middleware(_request: NextRequest) {
-  const response = NextResponse.next();
+  const response = NextResponse.next({ request: _request });
 
   // Allow requests from any origin (you can restrict this to your Android app's domain)
   response.headers.set('Access-Control-Allow-Origin', '*');
