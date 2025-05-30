@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   env: {
-    GNEWS_API_KEY: process.env.GNEWS_API_KEY,
+    GNEWS_API_KEY: '04014659f4e61b26f79420ea7624c1a9',
   },
   async headers() {
     return [
@@ -18,4 +18,4 @@ const nextConfig = {
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig; 
